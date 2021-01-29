@@ -16,7 +16,7 @@ public:
 	AEnemy();
 
 	UFUNCTION(BlueprintCallable)
-	void TakeDamage(float damage);
+	void DamageEnemy(float damage);
 
 	UFUNCTION(BlueprintCallable)
 	float getEnemyFullHealth() { return m_fullHealth; }

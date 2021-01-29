@@ -11,7 +11,7 @@ AEnemy::AEnemy()
 
 }
 
-void AEnemy::TakeDamage(float damage)
+void AEnemy::DamageEnemy(float damage)
 {
 	m_currentHealth = m_currentHealth - damage;
 }
