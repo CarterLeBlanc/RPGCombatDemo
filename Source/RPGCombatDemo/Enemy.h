@@ -16,16 +16,31 @@ public:
 	AEnemy();
 
 	UFUNCTION(BlueprintCallable)
+	///
+	/// Takes in a damage value and subtracts the enemy's health by that amount.
+	///
 	void DamageEnemy(float damage);
 
 	UFUNCTION(BlueprintCallable)
+	///
+	/// Returns the enemy's full health value.
+	///
 	float getEnemyFullHealth() { return m_fullHealth; }
 	UFUNCTION(BlueprintCallable)
+	///
+	/// Sets the enemy's full health value.
+	///
 	void setEnemyFullHealth(float fullHealth) { fullHealth = m_fullHealth; }
 
 	UFUNCTION(BlueprintCallable)
+	///
+	/// Gets the enemy's current health value.
+	///
 	float getEnemyCurrentHealth() { return m_currentHealth; }
 	UFUNCTION(BlueprintCallable)
+	///
+	/// Sets the enemy's current health value.
+	///
 	void setEnemyCurrentHealth(float currentHealth) { currentHealth = m_currentHealth; }
 
 protected:
@@ -37,6 +52,12 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 private:
+	///
+	/// Holds the enemy's full health value.
+	///
 	float m_fullHealth;
+	///
+	/// Holds the enemy's current health value.
+	///
 	float m_currentHealth;
 };
