@@ -7,6 +7,9 @@
 #include "Enemy.generated.h"
 
 UCLASS()
+///
+/// Holds functions that affect the enemy and inherits from the Actor class.
+///
 class RPGCOMBATDEMO_API AEnemy : public AActor
 {
 	GENERATED_BODY()
